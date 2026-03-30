@@ -271,6 +271,41 @@ Gra terenowa – Adam Sapieha
 <h3>Twoje odpowiedzi</h3>
 
 <div id="lista"></div>
+  <!-- Leaflet mapa -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<div id="mapa" style="height:400px; border-radius:10px;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+var mapa = L.map('mapa').setView([50.0616,19.9373], 14);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+maxZoom:19
+}).addTo(mapa);
+
+
+/* Punkty gry terenowej */
+
+L.marker([50.0607,19.9239])
+.addTo(mapa)
+.bindPopup("Park Jordana – start gry");
+
+L.marker([50.0614,19.9352])
+.addTo(mapa)
+.bindPopup("Pałac Arcybiskupi – ul. Franciszkańska 3");
+
+L.marker([50.0621,19.9400])
+.addTo(mapa)
+.bindPopup("Pomnik Adama Sapiehy – Planty");
+
+L.marker([50.0645,19.9422])
+.addTo(mapa)
+.bindPopup("Katolicki Dom Kultury im. Adama Sapiehy");
+
+</script>
 
 </div>
 
