@@ -178,15 +178,16 @@ Gra terenowa – Śladami Adama Sapiehy
 <div id="m1" class="miejsce">
 <h3>Pomnik w Parku Jordana</h3>
 <p>Kto wykonał i w którym roku został wykonany pomnika Adama Sapiehy?</p><input id="a1">
-<p>Kogo przedstawia popiersie znajdujące sie po lewej stronie od popiersia Adama Sapiehy</p><input id="a2">
+<p>Kogo przedstawia popiersie znajdujące sie po lewej stronie od popiersia Adama Sapiehy?</p><input id="a2">
 <p>Co łączyło tą osobę z Adamem Sapiehą?</p><input id="a3">
 <p>Adam Sapieha był ..... nie tylko z urodzenia, ale także z ducha.</p><input id="a4">
 </div>
 
 <div id="m2" class="miejsce">
 <h3>Pałac Arcybiskupi</h3>
-<p>Komu poświęcony jest dom kultury?</p><input id="a5">
-<p>Jaką funkcję pełnił Sapieha w Kościele?</p><input id="a6">
+<p>Co łączyło Adama Sapiehę z tym miejscem?</p><input id="a5">
+<p>Co w historii pałacu mogło być istotne dla Sapiehy jako arcybiskupa
+  ?</p><input id="a6">
 <p>W jakim mieście znajduje się to miejsce?</p><input id="a7">
 <p>W jakim mieście znajduje się to miejsce?</p><input id="a8">
 </div>
@@ -196,6 +197,7 @@ Gra terenowa – Śladami Adama Sapiehy
 <p>W jakim mieście znajdują się Planty?</p><input id="a9">
 <p>Kogo przedstawia pomnik?</p><input id="a10">
 <p>Jaką rolę odegrał Sapieha w historii miasta?</p><input id="a11">
+<p>Jaką rolę odegrał Sapieha w historii miasta?</p><input id="a12">
 </div>
 
 <div id="m4" class="miejsce">
@@ -233,9 +235,9 @@ maxZoom:19
 
 // punkty gry terenowej
 marker1 = L.marker([50.0607,19.9239]).addTo(mapa).bindPopup("Park Jordana – start gry");
-marker2 = L.marker([50.0614,19.9352]).addTo(mapa).bindPopup("Pałac Arcybiskupi");
-marker3 = L.marker([50.0621,19.9400]).addTo(mapa).bindPopup("Pomnik Adama Sapiehy – Planty");
-marker4 = L.marker([50.0645,19.9422]).addTo(mapa).bindPopup("Katolicki Dom Kultury");
+marker2 = L.marker([50.05955,19.9354]).addTo(mapa).bindPopup("Pałac Arcybiskupi");
+marker3 = L.marker([50.059251,19.935533]).addTo(mapa).bindPopup("Pomnik Adama Sapiehy – Planty");
+marker4 = L.marker([50.058349, 19.967049]).addTo(mapa).bindPopup("Katolicki Dom Kultury");
 
 // funkcja pokazująca pytanie i podświetlająca punkt
 function pokaz(id, marker){
