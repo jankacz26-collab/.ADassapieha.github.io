@@ -204,6 +204,8 @@ Gra terenowa – Śladami Adama Sapiehy
 <h3>Katolicki Dom Kultury</h3>
 <p>Z jakim papieżem związane jest to miejsce?</p><input id="a13">
 <p>Z jakim papieżem związane jest to miejsce?</p><input id="a14">
+<p>Z jakim papieżem związane jest to miejsce?</p><input id="a15">
+<p>Z jakim papieżem związane jest to miejsce?</p><input id="a16">
 <h4>Gratulacje! Ukończyłeś grę terenową.</h4>
 <button onclick="pokazOdpowiedzi()">Moje odpowiedzi</button>
 </div>
@@ -250,7 +252,7 @@ marker.openPopup();
 // pokaz odpowiedzi
 function pokazOdpowiedzi(){
 let tekst="";
-for(let i=1;i<=10;i++){
+for(let i=1;i<=16;i++){
 let pole=document.getElementById("a"+i);
 if(pole){tekst+="Odpowiedź "+i+": "+pole.value+"<br>";}
 }
